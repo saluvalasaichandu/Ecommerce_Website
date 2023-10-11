@@ -9,7 +9,7 @@ function App() {
     <BrowserRouter>
     <div >
      <Switch>
-      <Route path='/'>
+      <Route path="/">
         <Header/>
         <Home/>
       </Route>

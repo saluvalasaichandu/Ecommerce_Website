@@ -5,14 +5,14 @@ import ShoppingCartOutlinedIcon  from '@mui/icons-material/ShoppingCartOutlined'
 import {Link} from "react-router-dom"
 const Header = () => {
   return (
-    <nav className=' relative flex justify-evenly bg-gray-100 shadow-lg cursor-pointer '>
+    <nav className=' flex justify-between bg-gray-100 shadow-lg cursor-pointer p-4 font-bold'>
         <Link to="/">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROrWrs0oWyMyoHsWoahNudnEIvPuP_X5Kovn5dmwC4&s" alt="amazon_logo" className='h-18 w-1/2' />
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROrWrs0oWyMyoHsWoahNudnEIvPuP_X5Kovn5dmwC4&s" alt="amazon_logo" className='h-18 w-3/4' />
         </Link>
         <div>
             <LocationOnOutlinedIcon/>
         </div>
-        <div>
+        <div className='flex justify-between'>
             <span>Hello</span>
             <span>Select your address</span>
         </div>
@@ -23,7 +23,7 @@ const Header = () => {
             <input type="text"/>
             <SearchIcon/>
         </div>
-        <div>
+        <div className='flex justify-between '>
             <Link to="/login">
                 <div>
                 <span>Hello Guest</span>
