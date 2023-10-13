@@ -9,6 +9,7 @@ import Banner5 from "../../BannerImages/Banner5.jpg";
 import Banner6 from "../../BannerImages/Banner6.jpg";
 import Slider from '../../components/Slider/Slider';
 import Product from '../../components/Product/Product';
+import BackToTop from '../../components/BackToTop/BackToTop';
 const Home = () => {
   const bannerImages=[Banner1,Banner2,Banner3,Banner4,Banner5,Banner6]
   return (
@@ -17,7 +18,7 @@ const Home = () => {
       {headerItems&&headerItems.map((item,index)=><p>{item}</p>)}
       </div>
       <div >
-        <div className='absolute  w-full'>
+        <div className='absolute  w-full '>
            {/* slider component */}
            <Slider images={bannerImages}/>
            <div className=' flex justify-between w-1/2 py-32 my-4 '>
@@ -49,7 +50,7 @@ const Home = () => {
             {/* products */}
            </div>
            <div className=' flex justify-between w-1/3 py-16 m-4'>
-            {products.slice(5,6).map((item)=>
+            {products.slice(5,9).map((item)=>
               <Product key={item.id}
               id={item.id}
               title={item.title}
@@ -64,6 +65,7 @@ const Home = () => {
            </div>
            <div>
             {/* back to top */}
+            <BackToTop/>
            </div>
            </div>
       </div>

@@ -111,6 +111,46 @@ const products = [
     image:
       "https://images-na.ssl-images-amazon.com/images/I/61pI7loWpZS._SL1339_.jpg",
   },
+  {
+    id: "6",
+    title: "Hoffen Digital Electronic LCD Personal Body Fitness Weighing Scale (HO-18-Black)",
+    price: 40,
+    rating: 4,
+    specification: [
+     "The weighing scale is made of strong bearing and extremely durable tempered glass. It can be used and stored without you having to constantly worry about the durability and longevity of the weighing scale",
+"When not in use the device automatically shuts off after some time. So you need not worry about battery drainage even if you forget to switch it off."],
+    detail:
+      "Hoffee HO-18 weighing scale has high precision sensors that help in delivering very accurate reading of the weight placed on it.",
+    image:
+      "https://m.media-amazon.com/images/I/51b5EprYt8L._SY450_.jpg",
+  },
+  {
+    id: "7",
+    title: "Canon PIXMA MG2577s All in One (Print, Scan, Copy) Inkjet Colour Printer for Home",
+    price: 50,
+    rating: 5,
+    specification: [
+     "TPage size : A4, A5, B5, l, LGL, 10.16cm x 15.24cm, 12.70cm x 17.78cm, Envelopes (DL, COM10), Custom size (width 101.6 - 215.9mm, length 152.4 - 676mm); Max paper thickness: 64 to 275 GSM ; Maximum Input Sheet Capacity: 60 sheets (A4) ; Compatible ink: PG745s, Cl746s (Optional- PG745, PG745XL, CL746, CL746XL) ; Additional Printer Function: Basic All in one printer; Power wattage of printer: Standby (scanning lamp is off) (USB connection to PC): 1.0W, OFF: 0.4W, Copying (USB connection to PC): 9W"],
+ detail:"Special Features:Basic all in one printer ; Ideal Usage : Home ; Included Components: Printer, Power Cord, USB cable, Instruction Manual, 1 set of PG-745s and CL-746s cartridge",
+image:
+      "https://mobilesbazaar.in/cdn/shop/products/31Nz8KDRPXL.jpg?v=1682945647",
+  },
+  {
+    id: "8",
+    title: "boAt Wave Sigma Smartwatch with 2.01 HD Display,Bluetooth Calling,Modes,IP67(Active Black)",
+    price: 30,
+    rating: 5,
+    specification: [
+     "Screen Size- Wave Sigma comes with a massive 2.01” HD Display providing a complete capacitive touch experience, to let you take control effortlessly.Always on Display –No; Peak screen brightness 550 Nits(nits)"],
+ detail:"Health & Wellness- Keep a tab on your heart rate and blood oxygen levels on the go with the heart rate and SPO2 monitor. The sleep monitor tracks the stages of your sleep (light, deep and awake) to give you detailed summaries of your sleep health.Supported Applications- HR, SpO2, Fitness Tracker, Msgs, Pedometer, Calender, Alarm. Note: HR and SpO2 readings are not for medical usage",
+image:
+      "https://m.media-amazon.com/images/I/717TPJMrYGL._SX679_.jpg",
+  },
+
+
+
+
+  
 ];
 
 const headerItems = [

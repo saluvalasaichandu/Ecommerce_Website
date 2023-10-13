@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import ShoppingCartOutlinedIcon  from '@mui/icons-material/ShoppingCartOutlined';
 const Product = ({id,title,image,price,rating,specification,detail}) => {
   return (
-    <div className='px-12 m-4'>
+    <div className='px-12 m-4 '>
         <div>
             <Link to={`/products/${id}`}>
                 <p className='font-serif text-lg'>{title}</p>
@@ -18,7 +18,7 @@ const Product = ({id,title,image,price,rating,specification,detail}) => {
             </div>
             </div>
             <img src={image} alt=""/>
-            <button className='bg-yellow-400 text-lg rounded-xl '>
+            <button className='bg-yellow-400 text-lg rounded-xl p-2 m-2'>
                 <i>
                     <ShoppingCartOutlinedIcon/>
                 </i>
