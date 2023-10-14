@@ -21,13 +21,13 @@ const Login = () => {
                 <h3>Email</h3>
                 <input type="text" value={email} onChange={(e)=>{setEmail(e.target.value)}} placeholder='Email'/>
                 <h3>Password</h3>
-                <input type="password" value={password} onChange={(e)=>{setPassword(e.target.value)}} placeholder='Password'/>
-                <button type='submit' onClick={signIn} className=' p-2 m-2 flex justify-between bg-yellow-400 w-auto'>Sign In</button>
+                <input type="password" value={password} onChange={(e)=>{setPassword(e.target.value)}} placeholder='Password' className=''/>
+                <button type='submit' onClick={signIn} className=' p-2  flex justify-between bg-yellow-400 w-auto border-y-8'>Sign In</button>
             </form>
         </div>
         <p>New to Amazon?</p>
         <Link to="/register">
-            <button className='bg-gray-400'>Create your Account</button>
+            <button className='bg-gray-400 border-y-8'>Create your Account</button>
         </Link>
     </div>
   )
