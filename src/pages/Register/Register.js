@@ -2,12 +2,17 @@ import React from 'react'
 import { useState } from 'react'
 import AmazonLogo from "../../Amazon_Logo.png";
 import { Link } from 'react-router-dom/cjs/react-router-dom.min';
+import {useDispatch} from "react-redux"
+import { registerInitiate } from '../../redux/actions';
 const Register = () => {
     const[email,setEmail]=useState("");
     const[password,setPassword]=useState("");
+    let dispatch=useDispatch();
     const Register=(e)=>{
         e.preventDefault();
-
+        dispatch(registerInitiate(email,password))
+        setEmail("");
+        setPassword("");
     }
   return (
     <div className='py-24 my-24 px-16 mx-96 text-lg bg-slate-100'>
@@ -16,7 +21,7 @@ const Register = () => {
         </Link>
         <div>
             <h1>Create Account</h1>
-            <form>
+            <form >
                 <h3>Email</h3>
                 <input type="text" value={email} onChange={(e)=>setEmail(e.target.value)} placeholder="Email"/>
                 <h3>Password</h3>
@@ -34,4 +39,4 @@ const Register = () => {
   )
 }
 
-export default Register
+export default Register;

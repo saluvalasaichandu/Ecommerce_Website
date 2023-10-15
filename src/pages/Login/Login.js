@@ -1,7 +1,7 @@
 import React from 'react'
 import AmazonLogo from "../../Amazon_Logo.png";
 import {Link} from "react-router-dom";
-import { Email } from '@mui/icons-material';
+// import { Email } from '@mui/icons-material';
 import { useState } from 'react';
 const Login = () => {
     const [email,setEmail]=useState("");

@@ -146,10 +146,6 @@ image:
 image:
       "https://m.media-amazon.com/images/I/717TPJMrYGL._SX679_.jpg",
   },
-
-
-
-
   
 ];
 
