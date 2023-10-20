@@ -1,14 +1,28 @@
 import React from 'react'
 import AmazonLogo from "../../Amazon_Logo.png";
-import {Link} from "react-router-dom";
+import {Link,useHistory} from "react-router-dom";
 // import { Email } from '@mui/icons-material';
-import { useState } from 'react';
+import { useState,useEffect } from 'react';
+import { useSelector,useDispatch } from 'react-redux';
+import { loginInitiate } from '../../redux/actions';
 const Login = () => {
     const [email,setEmail]=useState("");
     const [password,setPassword]=useState("");
+
+    const {user}=useSelector(state=>state.data);
+    let dispatch=useDispatch();
+    let history=useHistory()
+    useEffect(()=>{
+        if(user){
+            history.push("/")
+        }
+    },[user,dispatch]);
+
     const signIn=(e)=>{
         e.preventDefault();
-
+        dispatch(loginInitiate(email,password));
+        setEmail("")
+        setPassword("")
     }
   return (
     <div className=' py-24 px-16 mx-96 my-24 text-lg bg-gray-200'>

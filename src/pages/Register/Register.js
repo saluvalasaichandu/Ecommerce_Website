@@ -1,12 +1,21 @@
 import React from 'react'
-import { useState } from 'react'
+import { useState, useEffect} from 'react'
 import AmazonLogo from "../../Amazon_Logo.png";
-import { Link } from 'react-router-dom/cjs/react-router-dom.min';
-import {useDispatch} from "react-redux"
+import { Link , useHistory} from 'react-router-dom/cjs/react-router-dom.min';
+import {useDispatch,useSelector} from "react-redux"
 import { registerInitiate } from '../../redux/actions';
 const Register = () => {
     const[email,setEmail]=useState("");
     const[password,setPassword]=useState("");
+    const {user}=useSelector(state=>state.data);
+    //console.log("state=",state); //to see items in basket
+    const history=useHistory();
+    console.log("user:",user);
+    useEffect(()=>{
+        if(user){
+            history.push("/")
+        }  
+    },[user,dispatch])    
     let dispatch=useDispatch();
     const Register=(e)=>{
         e.preventDefault();
