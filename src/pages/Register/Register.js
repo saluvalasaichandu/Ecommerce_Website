@@ -11,12 +11,13 @@ const Register = () => {
     //console.log("state=",state); //to see items in basket
     const history=useHistory();
     console.log("user:",user);
+    let dispatch=useDispatch();
     useEffect(()=>{
         if(user){
             history.push("/")
         }  
     },[user,dispatch])    
-    let dispatch=useDispatch();
+    
     const Register=(e)=>{
         e.preventDefault();
         dispatch(registerInitiate(email,password))

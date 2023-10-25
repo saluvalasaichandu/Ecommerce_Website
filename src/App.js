@@ -6,9 +6,22 @@ import Home from './pages/Home/Home';
 import Header from './components/Header/Header';
 import Register from './pages/Register/Register';
 import Login from './pages/Login/Login';
-
-
+import { useDispatch } from 'react-redux';
+import React,{ useEffect } from 'react';
+import { auth } from './utils/firebase';
+import { setUser } from './redux/actions';
 function App() {
+  let dispatch=useDispatch();
+  useEffect(()=>{
+    auth.onAuthStateChanged((authUser)=>{
+      if(authUser){
+        dispatch(setUser(authUser))
+      }
+      else{
+        dispatch(setUser(null))
+      }
+    })
+  },[dispatch])
   return (
     <BrowserRouter>
     <div >

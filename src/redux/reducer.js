@@ -9,6 +9,7 @@ const basketReducer=(state=initialState,action)=>{
     switch(action.type){
         case types.REGISTER_START:
         case types.LOGIN_START:
+        case types.LOGOUT_START:
             //state is same so we can append register and login
             return{
                 ...state,
@@ -21,8 +22,19 @@ const basketReducer=(state=initialState,action)=>{
                     loading:false,
                     user:action.payload
                 };
+            case types.LOGOUT_SUCCESS:
+                return{
+                    ...state,
+                    user:null
+                }
+            case types.SET_USER:
+                return{
+                    ...state,
+                    user:action.payload
+                }
             case types.REGISTER_FAIL:
             case types.LOGIN_FAIL:
+            case types.LOGOUT_FAIL:
                 return{
                     ...state,
                     loading:false,
