@@ -1,8 +1,17 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
+import { useDispatch } from 'react-redux';
 
 import ShoppingCartOutlinedIcon  from '@mui/icons-material/ShoppingCartOutlined';
+import { addToBasket } from '../../redux/actions';
 const Product = ({id,title,image,price,rating,specification,detail}) => {
+    const dispatch=useDispatch();
+    const addItemToBasket=()=>{
+        const item={
+            id,title,image,price,rating,specification,detail
+        };
+        dispatch(addToBasket(item));
+    }
   return (
     <div className='px-12 m-4 '>
         <div>
@@ -18,7 +27,7 @@ const Product = ({id,title,image,price,rating,specification,detail}) => {
             </div>
             </div>
             <img src={image} alt=""/>
-            <button className='bg-yellow-400 text-lg rounded-xl p-2 m-2'>
+            <button className='bg-yellow-400 text-lg rounded-xl p-2 m-2' onClick={addItemToBasket}>
                 <i>
                     <ShoppingCartOutlinedIcon/>
                 </i>

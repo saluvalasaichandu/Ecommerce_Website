@@ -1,5 +1,10 @@
 import * as types from './actionTypes';
-import {auth} from "../utils/firebase"
+import {auth} from "../utils/firebase";
+
+export const addToBasket=(item)=>({
+    type:types.ADD_TO_BASKET,
+    payload:item,
+})
 
 const registerStart=()=>({
     type:types.REGISTER_START,

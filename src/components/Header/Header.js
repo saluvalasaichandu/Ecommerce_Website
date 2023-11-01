@@ -6,7 +6,7 @@ import {Link} from "react-router-dom";
 import { useSelector,useDispatch } from 'react-redux';
 import { logoutInitiate } from '../../redux/actions';
 const Header = () => {
-    const {user}=useSelector(state=>state.data)
+    const {user,basket}=useSelector(state=>state.data)
     let dispatch=useDispatch();
     const handleAuth=()=>{
         if(user){
@@ -49,7 +49,7 @@ const Header = () => {
             <Link to="/checkout">
                 <div>
                     <ShoppingCartOutlinedIcon/>
-                <span>0</span>
+                <span>{basket && basket.length}</span>
                
                 </div>
             </Link>
