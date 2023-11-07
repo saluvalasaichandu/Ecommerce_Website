@@ -15,7 +15,7 @@ const Product = ({id,title,image,price,rating,specification,detail}) => {
   return (
     <div className='px-12 m-4 '>
         <div>
-            <Link to={`/products/${id}`}>
+            <Link to={`/product/${id}`}>
                 <p className='font-serif text-lg'>{title}</p>
             </Link>
             <p >

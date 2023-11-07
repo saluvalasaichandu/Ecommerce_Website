@@ -1,6 +1,6 @@
 const products = [
   {
-    id: "1",
+    id: "21",
     title: "Diverse Men's Regular Formal Shirt",
     price: 16,
     rating: 5,
@@ -20,7 +20,7 @@ const products = [
       "https://images-na.ssl-images-amazon.com/images/I/81qlnA0rJEL._UL1500_.jpg",
   },
   {
-    id: "2",
+    id: "22",
     title: "REDMI Note 10 (Aqua Green, 64 GB)  (4 GB RAM)",
     price: 11,
     rating: 3,
@@ -37,7 +37,7 @@ const products = [
       "https://images-na.ssl-images-amazon.com/images/I/71OGzLCrjZS._SL1500_.jpg",
   },
   {
-    id: "3",
+    id: "23",
     title: "Lenovo Tab M10 HD 2nd Gen (10.1 inch, 4 GB, 64 GB, Wi-Fi+LTE)",
     price: 11,
     rating: 4,
@@ -54,7 +54,7 @@ const products = [
       "https://images-na.ssl-images-amazon.com/images/I/41jdvXSoeyS._SL1000_.jpg",
   },
   {
-    id: "4",
+    id: "24",
     title:
       "HP Pavilion Gaming 10th Gen Intel Core i5 Processor 16.1 (40.9 cms) FHD Gaming Laptop",
     price: 11,
@@ -73,7 +73,7 @@ const products = [
       "https://images-na.ssl-images-amazon.com/images/I/71FHcGAPevL._SL1498_.jpg",
   },
   {
-    id: "5",
+    id: "25",
     title: "crocs Unisex-Adult Bayaband Clog",
     price: 23,
     rating: 4,
@@ -92,7 +92,7 @@ const products = [
       "https://images-na.ssl-images-amazon.com/images/I/712Brp0hwfL._UL1500_.jpg",
   },
   {
-    id: "1234",
+    id: "26",
     title:
       "LG 27 inch 4K-UHD (3840 x 2160) HDR 10 Monitor (Gaming & Design) with IPS Panel",
     price: 11,
@@ -112,7 +112,7 @@ const products = [
       "https://images-na.ssl-images-amazon.com/images/I/61pI7loWpZS._SL1339_.jpg",
   },
   {
-    id: "6",
+    id: "27",
     title: "Hoffen Digital Electronic LCD Personal Body Fitness Weighing Scale (HO-18-Black)",
     price: 40,
     rating: 4,
@@ -125,7 +125,7 @@ const products = [
       "https://m.media-amazon.com/images/I/51b5EprYt8L._SY450_.jpg",
   },
   {
-    id: "7",
+    id: "28",
     title: "Canon PIXMA MG2577s All in One (Print, Scan, Copy) Inkjet Colour Printer for Home",
     price: 50,
     rating: 5,
@@ -136,7 +136,7 @@ image:
       "https://mobilesbazaar.in/cdn/shop/products/31Nz8KDRPXL.jpg?v=1682945647",
   },
   {
-    id: "8",
+    id: "29",
     title: "boAt Wave Sigma Smartwatch with 2.01 HD Display,Bluetooth Calling,Modes,IP67(Active Black)",
     price: 30,
     rating: 5,

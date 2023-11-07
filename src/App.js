@@ -10,6 +10,9 @@ import { useDispatch } from 'react-redux';
 import React,{ useEffect } from 'react';
 import { auth } from './utils/firebase';
 import { setUser } from './redux/actions';
+import SingleProduct from './pages/SingleProduct/SingleProduct';
+import Checkout from './pages/Checkout/Checkout';
+import Orders from './pages/Orders/Orders';
 function App() {
   let dispatch=useDispatch();
   useEffect(()=>{
@@ -26,6 +29,18 @@ function App() {
     <BrowserRouter>
     <div >
      <Switch>
+     <Route path="/order">
+        <Header/>
+        <Orders/>
+      </Route>
+     <Route path="/checkout">
+        <Header/>
+        <Checkout/>
+      </Route>
+     <Route path="/product/:id">
+        <Header/>
+        <SingleProduct/>
+      </Route>
      <Route path="/register">
         <Register/>
       </Route>
